@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceTur S.A</title>
+    <!--CSS Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS do projeto-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--JS Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a href="index.html" class="navbar-brand secundary-color">
+          <img src="img/SpaceTur Logo.png" alt="SpaceTur S.A" />
+          <span>SpaceTur</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nave-item">
+              <a
+                href="index.html"
+                class="nav-link  secundary-color"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nave-item">
+              <a href="destinos.html" class="nav-link secundary-color"
+                >Destinos</a
+              >
+            </li>
+            <li class="nave-item">
+              <a href="promocoes.html" class="nav-link active secundary-color"
+                >Promoções</a
+              >
+            </li>
+            <li class="nave-item">
+              <a href="contato.html" class="nav-link secundary-color"
+                >Contato</a
+              >
+            </li>
+            <li class="nave-item">
+              <a href="informacoes.html" class="nav-link secundary-color"
+                >Sobre nós</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Promoções-->
+    <div class="container-fluid" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Trabalhos em Destaque</h2>
+        <p class="subtitle secondary-color">
+          Conheça nossos projetos mais desafiadores
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="#" alt="Promocao 1" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Promoção</p>
+              <h3>Passeio pelo Órbita Terrestre</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="#" alt="Promocao 2" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Promoção</p>
+              <h3>Conheça a Estação Espacial</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="#" alt="Promocao 3" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">Promoção</p>
+              <h3>Será que a Lua é feita de queijo?</h3>
+            </div>
+          </div>
+
+     <!--Rodapé-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!--Parte de cima do rodapé-->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4"><h2>SpaceTur S.A</h2></div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <!--Detalhes do rodapé-->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="newns-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Digite o seu e-mail"
+                    />
+                  </div>
+                  <button class="btn btn-dark" type="submit">Inscrever</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color"><i class="bi bi-telephone"></i> (31)3770-0000</p>
+                <p class="secondary-color"><i class="bi bi-envelope-at"></i> contato@spacetur.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Você pode estar procurando por:</h4>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="secondary-color">Destinos</a></li>
+                      <li><a href="#" class="secondary-color">Promoções</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#" class="secondary-color">Trabalhe Conosco</a>
+                      </li>
+                      <li><a href="#" class="secondary-color">SAC</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Footer Bottom-->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">SpaceTur S.A &copy; 2023</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">
+                  Levando você as alturas. <i class="bi bi-rocket-takeoff"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+CREATE TABLE compra (
+id_compra INT PRIMARY KEY,
+valor_compra VARCHAR(10),
+data_compra VARCHAR(10),
+id_destino VARCHAR(10),
+id_destino INT,
+id_usuario INT
+)
+
+CREATE TABLE usuario (
+id_usuario INT PRIMARY KEY,
+nome_usuario VARCHAR(200),
+cpf_usuario VARCHAR(11),
+telefone_usuario VARCHAR(11),
+senha_usuario VARCHAR(20),
+email_usuario VARCHAR(20)
+)
+
+CREATE TABLE Destino (
+id_destino INT PRIMARY KEY,
+valor DECIMAL(10),
+data_volta DATETIME,
+data_ida DATETIME
+)
+
+ALTER TABLE compra ADD FOREIGN KEY(id_destino) REFERENCES Destino (id_destino)
+ALTER TABLE compra ADD FOREIGN KEY(id_usuario) REFERENCES usuario (id_usuario)
+
